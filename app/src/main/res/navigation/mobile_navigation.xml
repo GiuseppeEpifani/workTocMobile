@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/nav_cliente"
+        android:name="com.e7.worktoc.ui.Cliente.PublicarSolicitud.InicioClienteFragment"
+        android:label="@string/menu_cliente"
+        tools:layout="@layout/inicio_cliente_fragment" />
+
+    <fragment
+        android:id="@+id/nav_editar_solicitud"
+        android:name="com.e7.worktoc.ui.Cliente.EditarSolicitud.EditarSolicitudTrabajoFragment"
+        android:label="@string/menu_cliente_editar"
+        tools:layout="@layout/editar_solicitud_trabajo_fragment" />
+
+    <fragment
+        android:id="@+id/nav_buscar_trabajador"
+        android:name="com.e7.worktoc.ui.Cliente.BuscarTrabajador.BuscarTrabajadorFragment"
+        android:label="@string/menu_cliente_buscar_trabajador"
+        tools:layout="@layout/buscar_trabajador_fragment" />
+
+    <fragment
+        android:id="@+id/nav_trabajador"
+        android:name="com.e7.worktoc.ui.Trabajador.BuscarTrabajo.InicioTrabajadorFragment"
+        android:label="@string/menu_inicio_trabajador"
+        tools:layout="@layout/inicio_trabajador_fragment" />
+
+    <activity
+        android:id="@+id/nav_solicitar_cuenta"
+        android:name="com.e7.worktoc.ui.Cliente.SolicitarCuentaTrabajo.SolicitarCuentaTrabajo"
+        android:label="@string/menu_inicio_trabajador"
+        tools:layout="@layout/activity_solicitar_cuenta_trabajo" />
+
+</navigation>

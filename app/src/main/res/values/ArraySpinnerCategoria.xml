@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="arrayCategoria">
+        <item> Seleccioné Categorias</item>
+        <item> Informatica</item>
+        <item> Hogar</item>
+        <item> Gafiteria</item>
+        <item> Electrecidad</item>
+        <item> Albañil</item>
+        <item> Medicina</item>
+        <item> Tema juridico</item>
+        <item> Cerrajeria</item>
+
+    </string-array>
+
+    <string-array name="arrayFiltrarCategorias">
+        <item> Filtrar por categorias</item>
+        <item> Informatica</item>
+        <item> Hogar</item>
+        <item> Gafiteria</item>
+        <item> Electrecidad</item>
+        <item> Albañil</item>
+        <item> Medicina</item>
+        <item> Tema juridico</item>
+        <item> Cerrajeria</item>
+
+    </string-array>
+
+</resources>

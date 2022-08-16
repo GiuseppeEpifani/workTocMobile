@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Opciónes de Cliente">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_cliente"
+                    android:icon="@drawable/publicar_solicitud"
+                    android:title="@string/menu_cliente" />
+                <item
+                    android:id="@+id/nav_editar_solicitud"
+                    android:icon="@drawable/mis_publicaciones"
+                    android:title="@string/menu_mis_solicitudes" />
+                <item
+                    android:id="@+id/nav_buscar_trabajador"
+                    android:icon="@drawable/buscar_trabajador"
+                    android:title="@string/menu_cliente_buscar_trabajador" />
+            </group>
+
+        </menu>
+    </item>
+
+    <item android:title="Opciónes de Trabajador">
+
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_trabajador"
+                    android:icon="@drawable/buscar_trabajo"
+                    android:title="@string/menu_inicio_trabajador" />
+            </group>
+
+        </menu>
+    </item>
+
+    <item android:title="Trabaja con nosotros!">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_solicitar_cuenta"
+                    android:icon="@drawable/solicitar_cuenta_trabajador"
+                    android:title="@string/menu_solicitar_cuenta" />
+
+            </group>
+
+        </menu>
+    </item>
+</menu>

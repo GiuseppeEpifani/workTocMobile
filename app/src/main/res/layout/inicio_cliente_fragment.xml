@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/iniciocliente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Cliente.PublicarSolicitud.InicioClienteFragment">
+
+    <fragment
+        android:id="@+id/fragmentMapaCliente"
+        android:name="com.e7.worktoc.ui.Cliente.PublicarSolicitud.FragmentMapsCliente"
+        android:layout_width="match_parent"
+        android:layout_height="404dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:gravity="center|center_vertical"
+        android:hint="Descripción del Trabajo a Realizar"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Spinnercategoria" />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentMapaCliente">
+
+        <EditText
+            android:id="@+id/txtPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:ems="10"
+            android:focusable="auto"
+            android:gravity="center"
+            android:hint="Monto a Pagar"
+            android:inputType="number"
+            android:selectAllOnFocus="false"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/txtHora"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Hora de Visita"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+    </TableRow>
+
+    <Spinner
+        android:id="@+id/Spinnercategoria"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="#85bb65"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow" />
+
+    <Button
+        android:id="@+id/btnPublicar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:text="Publicar"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescripcion"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentMapaCliente"
+        app:layout_constraintEnd_toStartOf="@+id/fragmentMapaCliente"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fragmentMapaCliente"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentMapaCliente"
+        app:srcCompat="@drawable/punto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

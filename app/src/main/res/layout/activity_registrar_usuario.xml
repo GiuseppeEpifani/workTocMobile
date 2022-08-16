@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.InicioSesion.RegistrarUsuario.RegistrarUsuario">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="97dp"><![CDATA[
+
+        />
+
+
+
+        ]]>
+        <ImageView
+            android:id="@+id/subirFoto"
+            android:layout_width="383dp"
+            android:layout_height="157dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/subir_foto" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            app:layout_constraintTop_toBottomOf="@+id/subirFoto"
+            tools:layout_editor_absoluteX="6dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/txtNombrePerfil"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Nombre"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/txtApePaterno"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Apellido Paterno"
+                    android:inputType="textPersonName" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="400dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/txtApeMaterno"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Apellido Materno"
+                    android:inputType="textPersonName" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="400dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/txtCorreo"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Correo"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/txtNumeroCelular"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Numero Celular"
+                    android:inputType="textPersonName" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="400dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/txtClaveRepetir"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Contraseña"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/txtClave"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Rep. Contraseña"
+                    android:inputType="textPersonName" />
+
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etpass"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="REGISTRASE"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+            tools:layout_editor_absoluteX="29dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
